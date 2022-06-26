@@ -23,7 +23,7 @@
 				</header>
 				<div class="content-container">
 					<div class="code-snippet-container">
-						<div class="code-snippet-file">about_me.c</div>
+						<div class="code-snippet-file">about_me.cpp</div>
 						<table>
 							<tr>
 								<td class="line-numbers">
@@ -40,22 +40,24 @@
 									<span>11</span><br>
 									<span>12</span><br>
 									<span>13</span><br>
-									<span>14</span>
+									<span>14</span><br>
+									<span>15</span><br>
 								</td>
 								<td>
 									<span class="comment">// Last updated: 2022/06/24 ( YYYY/MM/DD )</span><br>
+									<span class="preprocessor">#include </span><span class="arrow-surround function">stdint.h</span><br>
 									<br>
 									</span><span class="comment">// info_t: stores general information about me :)</span><br>
 									<span class="type">struct </span><span class="variable">info_t</span><br>
 									<span>{</span><br>
 									<span class="tab"></span><span class="comment">// General info:</span><br>
-									<span class="tab"></span><span class="type">char</span><span>[</span><span class="number">32</span><span>] </span><span class="variable">nickname</span><span> = </span><span class="string">"Fifty"</span><span>;</span><br>
-									<span class="tab"></span><span class="type">char</span><span>[</span><span class="number">32</span><span>] </span><span class="variable">nationality</span><span> = </span><span class="string">"Czech"</span><span>;</span><br>
+									<span class="tab"></span><span class="type">char </span><span class="variable">nickname</span><span>[</span><span class="number">2</span><span>]</span><span>[</span><span class="number">32</span><span>]</span><span> = { </span><span class="string">"Fifty"</span><span>, </span><span class="string">"Forty"</span><span> };</span><br>
+									<span class="tab"></span><span class="type">char </span><span class="variable">nationality</span><span>[</span><span class="number">32</span><span>]</span><span> = </span><span class="string">"Czech"</span><span>;</span><br>
 									<span class="tab"></span><span class="type">uint8_t</span><span class="variable"> age</span><span> = </span><span class="number">18</span><span>;</span><br>
 									<br>
 									<span class="tab"></span><span class="comment">// Contact:</span><br>
-									<span class="tab"></span><span class="type">char</span><span>[</span><span class="number">32</span><span>] </span><span class="variable">discord</span><span> = </span><span class="string">"@Fifty#8113"</span><span>;</span><br>
-									<span class="tab"></span><span class="type">char</span><span>[</span><span class="number">32</span><span>] </span><span class="variable">matrix</span><span> = </span><span class="string">"@f0rty:matrix.org"</span><span>;</span><br>
+									<span class="tab"></span><span class="type">char </span><span class="variable">discord</span><span>[</span><span class="number">32</span><span>]</span><span> = </span><span class="string">"@Fifty#8113"</span><span>;</span><br>
+									<span class="tab"></span><span class="type">char </span><span class="variable">matrix</span><span>[</span><span class="number">32</span><span>]</span><span> = </span><span class="string">"@f0rty:matrix.org"</span><span>;</span><br>
 									<span>};</span><br>
 								</td>
 							</tr>

@@ -557,6 +557,18 @@ h3
     color: #c5b050;
 }
 
+.arrow-surround
+{
+	&::before
+	{
+		content: '<';
+	}
+	&::after
+	{
+		content: '>';
+	}
+}
+
 .tab
 {
     display: inline-block;
