@@ -1,0 +1,119 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 300;
+	overflow-wrap: break-word;
+	transition: font-size 30ms;
+}
+
+:root {
+	// Font size
+	--fs-body: 0.9rem;
+	--fs-h1: 2.2rem;
+	--fs-h2: 1.6rem;
+	--fs-h3: 1.2rem;
+	--fs-code-snippet: 0.8rem;
+	--fs-table: 0.8rem;
+	--fs-section-name: 0.8rem;
+	// Line height
+	--lh-code-snippet: 1.2rem;
+	--lh-table: 1.2rem;
+}
+
+
+body {
+	background-color: #101f24;
+	color: #c4d7e4;
+	font-size: var(--fs-body);
+}
+
+a {
+	color: #79b5b9;
+	&:after {
+		color: #79b5b9;
+	}
+}
+
+.greeting-wrapper {
+	margin-top: 40vh;
+	animation: move 3s infinite;
+	animation-delay: 2.7s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	text-align: center;
+}
+
+@keyframes move {
+	to {
+		margin-top: 34vh;
+	}
+}
+
+.main-type-5 {
+	margin: auto;
+	width: 5ch;
+	animation: typing .7s steps(5), blink .5s step-end alternate, hide .7s step-end;
+	animation-fill-mode: forwards;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+}
+
+.main-type-15
+{
+	visibility: hidden;
+	margin: auto;
+	width: 15ch;
+	animation: typing 2s steps(15), blink .5s step-end infinite alternate;
+	animation-delay: .7s;
+	animation-fill-mode: forwards;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+}
+
+@keyframes hide {
+	100% {
+		border-right: 0px;
+	}
+}
+
+@keyframes typing {
+	100% {
+		visibility: visible;
+	}
+	from {
+		width: 0
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent
+	}
+}
+
+.contacts-wrapper {
+	margin-top: 3rem;
+	animation: fadein 3s infinite;
+	animation-delay: 2.7s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	text-align: center;
+	opacity: 0;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.contact {
+	margin-top: 1rem;
+}
